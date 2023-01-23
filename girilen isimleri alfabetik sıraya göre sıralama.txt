@@ -1,0 +1,9 @@
+string[] isim = new string[10];
+for (int i = 0; i < 10; i++)
+{
+    Console.Write("isim giriniz:");
+    isim[i] = Console.ReadLine();
+}
+Array.Sort(isim);
+for(int i = 0; i<10; i++)
+    Console.WriteLine(isim[i]);

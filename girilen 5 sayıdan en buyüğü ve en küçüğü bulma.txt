@@ -1,0 +1,13 @@
+Console.WriteLine("1. değeri giriniz: ");
+int sayi= Convert.ToInt32(Console.ReadLine());
+int enb = sayi;
+int enk = sayi;
+for(int sayac=2;sayac<=5;sayac++)
+{
+    Console.WriteLine($"{sayac}. sayıyı giriniz");
+    sayi= Convert.ToInt32(Console.ReadLine());
+    if(sayi>enb) enb=sayi;
+    if(sayi<enk) enk=sayi;
+}
+Console.WriteLine(enb);
+Console.WriteLine(enk);

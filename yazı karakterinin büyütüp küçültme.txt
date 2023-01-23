@@ -1,0 +1,4 @@
+string metin = "dogukan okula gel";
+
+Console.WriteLine(metin.ToLower());//yazının tüm karakterini küçültür
+Console.WriteLine(metin.ToUpper());//yazının tüm karakterinin büyütüt

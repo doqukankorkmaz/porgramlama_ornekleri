@@ -1,0 +1,19 @@
+Console.Write("1. sayigiriniz");
+int sayi1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("2. sayigiriniz");
+int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("3. sayigiriniz");
+int sayi3 = Convert.ToInt32(Console.ReadLine());
+
+if (sayi1 > sayi2 && sayi1>sayi3)
+    Console.WriteLine($"büyük sayı {sayi1} dir");
+
+if (sayi2 > sayi3 && sayi2>sayi1)
+    Console.WriteLine($"büyük sayı {sayi2} dir");
+
+
+if (sayi3 > sayi1 && sayi3 > sayi2)
+    Console.WriteLine($"büyük sayı {sayi3} dir");
+Console.ReadKey();

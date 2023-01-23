@@ -1,0 +1,10 @@
+//değer değiştirme
+
+static void yaz(int[] dizi)
+{
+    dizi[0] = 15;
+}
+int [] sayilar =new int[5] {3,5,9,4,1};
+Console.WriteLine(sayilar[0]);
+yaz(sayilar);
+Console.WriteLine(sayilar[0]);

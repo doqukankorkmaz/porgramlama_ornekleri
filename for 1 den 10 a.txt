@@ -1,0 +1,7 @@
+int toplam = 0;
+for( int sayac=1; sayac<=10; sayac++)
+{
+    Console.WriteLine(sayac);
+    toplam += sayac;
+}
+Console.WriteLine(toplam);

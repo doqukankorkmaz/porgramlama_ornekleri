@@ -1,0 +1,52 @@
+
+class ogrenci
+{
+    private int numara;
+    private string ad;
+    private string Sad;
+    private int vize;
+    private int final;
+
+    public int Numara { get { return numara; } set { numara = value; } }
+    public string Ad { get { return ad; } set { ad = value; } }
+    public string Soad { get { return Sad; } set { Sad = value; } }
+
+    public int Vize { get { return vize; } set { if (value < 0 || value > 100) vize = 0; else vize = value; } }
+
+    public int Final { get { return final; } set { if (value < 0 || value > 100) final = 0; else final = value; } }
+
+    public double ortalama()
+    {
+        return vize * 0.4 + final * 0.6;
+    }
+    public void yaz()
+    {
+        Console.WriteLine($"ad:{Ad}");
+        Console.WriteLine($"soyad:{Soad}");
+        Console.WriteLine($"vize:{Vize}");
+        Console.WriteLine($"Final:{final}");
+    }
+
+    public void bilgiGir(int no, string isim, string soyisim)//dışardan girdirme
+    {
+        numara = no;
+        ad = isim;
+        Soad = soyisim;
+    }
+}
+class program
+{
+    static void Main(string[] args)
+    {
+        ogrenci ogrenci1= new ogrenci();
+        ogrenci1.Ad = "dogukan";
+        ogrenci1.Soad = "korkmaz";
+        ogrenci1.Vize = 100;
+        ogrenci1.Final = 100;
+        ogrenci1.yaz();
+        Console.WriteLine(ogrenci1.ortalama());
+
+        ogrenci1.bilgiGir(125, "eray", "Çuha");//dışardan girilen okuma
+        ogrenci1.yaz();
+    }
+}

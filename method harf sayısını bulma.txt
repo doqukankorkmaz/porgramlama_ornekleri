@@ -1,0 +1,8 @@
+
+static int harfsay(string metin)
+{
+    int uzunluk=metin.Length;
+    return uzunluk;
+}
+int sonuc = harfsay("dogukan");
+Console.WriteLine(sonuc);

@@ -1,0 +1,13 @@
+Random r = new Random();
+int[]dizi= new int[5];
+int toplam = 0;
+
+   for (int i = 0; i <5; i++)
+{
+    dizi[i] = r.Next(0,50);
+    Console.WriteLine($" {dizi[i]} ");
+    toplam += dizi[i];
+}
+Console.WriteLine($"rastgele atanan sayıların toplamı: {toplam}");
+
+//geçen senenin sınav sorusu

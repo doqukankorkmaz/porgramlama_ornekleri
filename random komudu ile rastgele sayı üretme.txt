@@ -1,0 +1,14 @@
+Random r = new Random();
+int rastgelesayi;
+int secim, alt=1, ust=100;
+while(true)
+{
+    rastgelesayi = r.Next(alt, ust);
+    Console.WriteLine($"tutulan sayı {rastgelesayi} mı?");
+    Console.Write("artır(1) azalt(2) evet(3)");
+    secim = Convert.ToInt32(Console.ReadLine());
+    if (secim == 1) alt = rastgelesayi;
+    if (secim == 2) ust = rastgelesayi;
+    if (secim == 3) break;
+}
+Console.WriteLine($"buldum tuttuğun sayı {rastgelesayi}");

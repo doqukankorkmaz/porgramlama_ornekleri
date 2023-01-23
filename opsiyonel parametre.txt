@@ -1,0 +1,9 @@
+static void yaz(string isim="dogukan", int tekrar=5)
+{
+    for (int i = 0; i <=tekrar; i++)
+        Console.WriteLine(isim);
+
+}
+yaz("ali", 10);
+yaz();
+    //opsiyenel parametre

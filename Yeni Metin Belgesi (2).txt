@@ -1,0 +1,25 @@
+class A
+{
+    protected static int sayi;//o sınıftan üretilen değerleri diğer yerlerde sağlayabilyoruz
+
+    public A(int Aparametre) //A SINIFINON YAPICI METHODU
+    { 
+        Console.WriteLine($"A sınıfı parametre { Aparametre }");
+    }
+}
+class B:A
+{
+    public B(int a,int dede):base(dede)
+    {
+        sayi = 10;
+        Console.WriteLine($"B sınıfı alınan parametre { a}");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        B nesne = new B(5,6);
+    }
+}

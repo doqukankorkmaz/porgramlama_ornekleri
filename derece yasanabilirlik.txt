@@ -1,0 +1,12 @@
+Console.Write("derece giriniz:");
+int der = Convert.ToInt32(Console.ReadLine());
+
+if (der >= 20 && der <= 26)
+{
+    Console.WriteLine("girilen derecede yaşanır");
+}
+else
+{
+    Console.WriteLine("yaşanamaz");
+}
+Console.ReadKey();

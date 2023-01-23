@@ -1,0 +1,7 @@
+int[] sayilar = new int[5] {3,1,2,8,9};
+Array.Reverse(sayilar);//diziyi ters okur
+
+for (int i = 0; i < 5; i++)
+    Console.WriteLine($"dizinin {i}. elemanı {sayilar[i]}");
+
+//dizinin içindeki sayıları tersten yazar

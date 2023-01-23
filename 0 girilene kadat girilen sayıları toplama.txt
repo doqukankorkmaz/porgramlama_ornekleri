@@ -1,0 +1,8 @@
+int sayi, toplam = 0;
+do
+{
+    Console.Write("değer giriniz:");
+    sayi = Convert.ToInt32(Console.ReadLine());
+    toplam = toplam + sayi;
+} while (sayi != 0);
+Console.WriteLine(toplam);

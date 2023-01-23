@@ -1,0 +1,11 @@
+Console.Write("birinci sayı giriniz:");
+int s1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("ikjinci sayı giriniz:");
+int s2 = Convert.ToInt32(Console.ReadLine());
+if (s1 > s2)
+    Console.WriteLine($"büyük olan {s1}");
+if (s2 > s1)
+    Console.WriteLine($"büyük olan{s2}");
+if (s1 == s2)
+    Console.WriteLine("sayılar birbirine eşit"); 
+Console.ReadKey();

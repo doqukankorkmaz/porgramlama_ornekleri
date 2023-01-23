@@ -1,0 +1,5 @@
+static void buyukharf(string metin)
+{
+    Console.WriteLine(metin.ToUpper());
+}
+buyukharf("doğukan");

@@ -1,0 +1,13 @@
+int sayi, tambol, sayac;
+Console.Write("sayi giriniz: ");
+sayi=Convert.ToInt32(Console.ReadLine());
+tambol = 0;
+for (sayac = 1; sayac <= sayi/2; sayac++) 
+{
+    if (sayi % sayac == 0)
+        tambol = tambol + 1;
+}
+if (tambol == 2)
+    Console.WriteLine($"{sayi} sayısı asaldır");
+else
+    Console.WriteLine($"{sayi} sayısı asal değildir");

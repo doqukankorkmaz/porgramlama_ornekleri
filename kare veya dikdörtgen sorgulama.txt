@@ -1,0 +1,10 @@
+Console.Write("ukenar giriniz:");
+int ukenar = Convert.ToInt32(Console.ReadLine());
+Console.Write("kkenar giriniz:");
+int kkenar = Convert.ToInt32(Console.ReadLine());
+double alan = ukenar * kkenar;
+if (kkenar == ukenar) 
+    Console.WriteLine($"kare ve alan {alan} dır");
+else
+    Console.WriteLine($"dikdörtgen ve alan {alan} dır ");
+Console.ReadKey();

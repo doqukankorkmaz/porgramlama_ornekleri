@@ -1,0 +1,9 @@
+Random r = new Random();
+int sayi, toplam = 0;
+for (int i = 1; i <= 5; i++)
+{
+    sayi = r.Next(10, 100);//100-999 arası rastgele sayı üretir
+    Console.WriteLine($"{i}. sayi: {sayi} ");
+    toplam = toplam + sayi;
+}
+Console.WriteLine($"rastgele atanan sayıların toplamı: {toplam}");

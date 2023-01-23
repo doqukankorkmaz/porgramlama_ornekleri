@@ -1,0 +1,87 @@
+class ders
+{
+    private string kod;
+    private string ad;
+    private string kredi;
+    private string egitmen;
+
+    public string setKod { get { return kod; } set { kod = value; } }
+    public string SetAd { get { return ad; } set { ad = value; } }
+    public string setKredi { get { return kredi; } set { kredi = value; } }
+    public string setEgitmen { get { return egitmen; } set { egitmen = value; } }
+
+    public void dersBilgiVer()
+    {
+        Console.WriteLine($"kod: {setKod}");
+        Console.WriteLine($"ders ad: {SetAd}");
+        Console.WriteLine($"kredi: {setKredi}");
+        Console.WriteLine($"egitmen: {setEgitmen}");
+    }
+    public void egitmenDegis(string Egitmen)
+    {
+        setEgitmen = Egitmen;
+    }
+    public void koddegis(string kod)
+    {
+        setKod = kod;
+    }
+
+}
+
+class ogrenci
+{
+    private int numara;
+    private string ogrenciAd;
+    private string ogrenciSoyad;
+    private int vize;
+    private int final;
+
+    public int setNumara { get { return numara; } set { numara = value; } }
+    public string setOgrenciAd { get { return ogrenciAd; } set { ogrenciAd = value; } }
+    public string setOgrenciSoyad { get { return ogrenciSoyad; } set { ogrenciSoyad = value; } }
+    public int setVize { get { return vize; } set { if (value < 0 || value > 100) vize = 0; else vize = value; } }
+    public int setFinal { get { return final; } set { if (value < 0 || value > 100) final = 0; else final = value; } }
+    public double ortalama()
+    {
+        return vize * 0.4 + final * 0.6;
+    }
+
+    public void ogrenciBilgiVer()
+    {
+        Console.WriteLine($"Numara: {setNumara} ");
+        Console.WriteLine($"ogrencAd: {setOgrenciAd}");
+        Console.WriteLine($"ogrenciSoyad: {setOgrenciSoyad}");
+        Console.WriteLine($"vize Notu: {setVize}");
+        Console.WriteLine($"final notu: {setFinal}");
+    }
+
+}
+class program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("------------------------------DERS BİLGİ VER-------------------");
+        ders ders1 = new ders();
+        ders1.setKod = "200";
+        ders1.SetAd = "Matematik";
+        ders1.setKredi = "4";
+        ders1.setEgitmen = "hasan";
+        ders1.dersBilgiVer();
+
+        ders1.egitmenDegis("hüseyin");
+        ders1.dersBilgiVer();
+
+        ders1.koddegis("155");
+        ders1.dersBilgiVer();
+
+        Console.WriteLine("------------------------------OGRENCİ BİLGİ VER----------------");
+        ogrenci ogrenci1 = new ogrenci();
+        ogrenci1.setNumara = 224212013;
+        ogrenci1.setOgrenciAd = "Doğukan";
+        ogrenci1.setOgrenciSoyad = "korkmaz";
+        ogrenci1.setVize = 65;
+        ogrenci1.setFinal = 80;
+        ogrenci1.ogrenciBilgiVer();
+        Console.WriteLine($"ortalama: {ogrenci1.ortalama()}");
+    }
+}

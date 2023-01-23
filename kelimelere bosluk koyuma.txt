@@ -1,0 +1,8 @@
+string metin = "dogukan";
+Console.WriteLine($"merhaba {metin} Nasılsın");
+Console.WriteLine($"merhaba {metin.PadLeft(10)} Nasılsın");
+Console.WriteLine($"merhaba {metin.PadRight(10)} Nasılsın");
+
+
+
+

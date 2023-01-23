@@ -1,0 +1,12 @@
+Console.Write("fiyat girinz:");
+int fiyat=Convert.ToInt32(Console.ReadLine());
+
+if (fiyat <= 50) 
+Console.WriteLine("indirim yok");
+
+if (fiyat > 50 && fiyat < 100)
+    Console.WriteLine($"indirimli fiyat {fiyat-(fiyat*0.02)}");
+
+if (fiyat >= 100 && fiyat < 200)
+    Console.WriteLine($"indirimli fiyat {fiyat-(fiyat * 0.04)}");
+Console.ReadKey();

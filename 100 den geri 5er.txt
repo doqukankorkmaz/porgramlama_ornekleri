@@ -1,0 +1,10 @@
+int sayac = 100;
+
+while (sayac>=0) 
+{
+
+    Console.WriteLine(sayac);
+    sayac = sayac - 5;
+}
+
+Console.ReadKey();

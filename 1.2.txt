@@ -1,0 +1,23 @@
+
+class personel
+{
+    private int id;
+
+    public int ID
+    {
+        get { return id; }
+        set { id = value; }
+    }
+public int pno { get; set; }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        personel serkan = new personel();
+        serkan.pno = 10;
+        Console.WriteLine(serkan.pno);
+        serkan.ID = 10;
+        Console.WriteLine(serkan.ID);
+    }
+}

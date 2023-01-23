@@ -1,0 +1,27 @@
+  static void topla()
+{
+    Console.Write("sayi giriniz:");
+    int sayi1= Convert.ToInt32(Console.ReadLine());
+    Console.Write("sayi giriniz:");
+    int sayi2 = Convert.ToInt32(Console.ReadLine());
+    int toplam = sayi1 + sayi2;
+    Console.WriteLine($"değerler toplamı{toplam}");
+
+}
+ static void topla2(int sayi1, int sayi2)
+{
+    int toplam= sayi1 + sayi2;
+    Console.WriteLine($"değerler toplamı{toplam}");
+}
+static int topla3(int sayi1, int sayi2)
+{
+    int toplam=sayi1+ sayi2;
+    return toplam;
+}
+
+    topla();
+
+    topla2(5,7);
+
+int sonuc = topla3(5, 6);
+Console.WriteLine(sonuc);

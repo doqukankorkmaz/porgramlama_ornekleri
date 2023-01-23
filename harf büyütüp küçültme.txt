@@ -1,0 +1,52 @@
+using System.Globalization;
+
+class metinisle
+{
+    public static string buyukharf(string metin)
+    {
+
+        metin = metin.ToUpper();//küçük yazıyı büyük yazdırma
+        return metin;
+    }
+    public static string kucukharf(string metin)
+    {
+        metin = metin.ToLower();//büyük yazıyı küçük yazdırma
+        return metin;
+    }
+    public static string basharf (string metin)
+    {
+        string[] dizi= metin.Split(' ');
+        string kelime;
+        for(int i=0; i<dizi.Length; i++)
+        {
+            kelime= dizi[i];
+            dizi[i] = kelime[0].ToString().ToUpper()+kelime.Substring(1, kelime.Length-1).ToLower();
+        }
+        return string.Join(" ",dizi);
+    }
+    public static string ters(string metin) 
+    {
+        for(int i=metin.Length-1; i>=0;i--)
+        {
+            Console.Write(metin[i]); 
+            
+        }
+        return metin;
+    }
+
+}
+class program
+{ 
+    static void Main(string[] args)
+    {
+        Console.Write("kelime giriniz");
+        string metin=Console.ReadLine();
+
+        Console.WriteLine(metinisle.buyukharf(metin));
+        Console.WriteLine(metinisle.kucukharf(metin));
+        Console.WriteLine(metinisle.basharf(metin));
+        Console.Write("ters hali: ");
+        metinisle.ters(metin);
+
+    }
+}

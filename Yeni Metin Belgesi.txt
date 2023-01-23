@@ -1,0 +1,28 @@
+class A
+{
+    protected static int sayi;
+    public A()
+    {
+        sayi = 5;
+        Console.WriteLine($"A sınıfı { sayi }");
+    }
+}
+    class B:A
+    {
+        protected static int sayi;
+
+        public B()
+        {
+            sayi = 10;
+            Console.WriteLine($"B sınıfı {sayi}");
+        }
+    }
+
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        B nesne = new B();
+    }
+}

@@ -1,0 +1,26 @@
+//gelen ğaramaetrelerden büyük olan sayıyı geri döndüren metod
+static bool uyekontrol(string kullaniciadi, string sifre)
+{
+    
+    if(kullaniciadi=="admin" && sifre=="1234")
+        return true;
+    else
+        return false;
+}
+string KAd, Sfre;
+
+
+do
+{
+    Console.Write("kullanıcı adı ginriniz:");
+    KAd = Console.ReadLine();
+    Console.Write("sifre giriniz:");
+    Sfre = Console.ReadLine();
+    if (uyekontrol(KAd, Sfre))
+        Console.Write("giriş başarılı");
+    else
+        Console.WriteLine("Kullanıcı Adı Veya Şifre Hatalı");
+
+}
+while (!uyekontrol(KAd, Sfre));
+

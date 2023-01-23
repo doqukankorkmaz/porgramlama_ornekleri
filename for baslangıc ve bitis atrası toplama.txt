@@ -1,0 +1,15 @@
+int baslangic, bitis, toplam, sayac;
+toplam = 0;
+Console.Write("başlangıç değeri giriniz");
+baslangic = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("bitiş değeri giriniz");
+bitis = Convert.ToInt32(Console.ReadLine());
+
+for (sayac = baslangic; sayac <= bitis; sayac++)
+{
+    Console.WriteLine(sayac);
+    toplam = toplam + sayac;
+
+}
+Console.WriteLine($"girilen sayı değerleri arası toplam {toplam}");

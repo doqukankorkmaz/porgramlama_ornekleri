@@ -1,0 +1,9 @@
+Console.Write("şifrelenecek metini giriniz:");
+string metin=Console.ReadLine();
+
+for (int i = 0; i < metin.Length; i++)
+{
+    int sayi = (int)metin[i];
+    int eklenmis = sayi + 3;
+    Console.Write((char)eklenmis);
+}

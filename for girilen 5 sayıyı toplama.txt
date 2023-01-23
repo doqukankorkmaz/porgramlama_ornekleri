@@ -1,0 +1,9 @@
+int sayi, toplam, sayac;
+toplam = 0;
+for(sayac=1; sayac<=5; sayac++ )
+{
+    Console.WriteLine($"{sayac}. sayıyı giriniz");
+    sayi = Convert.ToInt32(Console.ReadLine());
+    toplam += sayi;
+}
+Console.WriteLine(toplam);

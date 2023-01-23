@@ -1,0 +1,15 @@
+//değer değiştirme
+
+static void yaz(int[] dizi)
+{
+    for(int i=0; i<dizi.Length; i++)
+        Console.WriteLine(dizi[i]);
+}
+
+static void sirala(int[] dizi)
+{
+    Array.Sort(dizi);
+}
+int [] sayilar =new int[5] {3,5,9,4,1};
+sirala(sayilar);
+yaz(sayilar);

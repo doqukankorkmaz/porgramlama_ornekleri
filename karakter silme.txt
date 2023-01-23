@@ -1,0 +1,3 @@
+string metin = "dogukan okula gel";
+string yeni = metin.Remove(7,5);
+    Console.WriteLine(yeni);

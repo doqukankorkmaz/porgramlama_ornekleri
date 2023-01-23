@@ -1,0 +1,7 @@
+Console.Write("uzun kenar:");
+int ukenar = Convert.ToInt32(Console.ReadLine());
+Console.Write("kısa kenar:");
+int ikkenar = Convert.ToInt32(Console.ReadLine());
+double  alan = ikkenar * ukenar;
+Console.WriteLine($"dikdörtgenin alanı: {alan}");
+Console.ReadKey();

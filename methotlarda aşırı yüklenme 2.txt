@@ -1,0 +1,12 @@
+static int toplam(params int[] sayilar)
+{
+    int toplam = 0;
+    for (int i = 0; i < sayilar.Length; i++)
+        toplam += sayilar[i];
+    return toplam;
+}
+Console.WriteLine(toplam(5, 7,8,9,2));
+Console.WriteLine(toplam(5,21,5));
+Console.WriteLine(toplam(5,1));
+
+//methodların aşırı yüklenmesi birden fazla girilebilir

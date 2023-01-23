@@ -1,0 +1,6 @@
+Console.Write("urun fiyati gir");
+int fiyat=Convert.ToInt32(Console.ReadLine());
+double kdv = fiyat*0.18;
+double toplam = fiyat + kdv;
+Console.WriteLine($"{kdv} urun {toplam} sonuc değerinde:");
+Console.ReadKey();

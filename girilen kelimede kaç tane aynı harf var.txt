@@ -1,0 +1,15 @@
+Console.WriteLine("Lütfen Kelimeyi Giriniz: ");
+string kelime = Console.ReadLine();
+Console.WriteLine("Lütfen Aranacak Harfi Giriniz: ");
+string harf = Console.ReadLine();
+int sayi = 0;
+
+for (int i = 0; i < kelime.Length; i++)
+{
+    if (kelime[i] == harf[0])
+    {
+        sayi++;
+    }
+}
+Console.WriteLine($"Girilen Kelime: {kelime}");
+Console.WriteLine($"'{harf}' karakterinden toplam '{sayi}' tane var.");

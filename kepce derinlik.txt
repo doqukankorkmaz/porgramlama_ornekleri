@@ -1,0 +1,7 @@
+int kepce, derinlik;
+kepce = 2586;
+for (derinlik = 960; derinlik >= 0; derinlik -= 40)
+{
+    kepce = kepce - 58;
+}
+Console.WriteLine(kepce);

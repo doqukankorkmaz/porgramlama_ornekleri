@@ -1,0 +1,12 @@
+
+
+Console.Write("bir cümle giriniz:");
+string cumle=Console.ReadLine();
+Console.Write("aranacak kelimeyi giriniz:");
+string kelime = Console.ReadLine();
+
+int konum = cumle.IndexOf(kelime);
+if (konum == -1)
+    Console.WriteLine("aranan kelime yok");
+else
+Console.WriteLine($"arana kelime {konum + 1}. harften başlıyor");

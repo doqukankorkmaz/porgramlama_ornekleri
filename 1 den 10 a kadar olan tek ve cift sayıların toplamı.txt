@@ -1,0 +1,12 @@
+int sayac, tek, cift;
+cift = 0;
+tek = 0;
+for(sayac=1; sayac<=10; sayac++)
+{
+    if (sayac % 2 == 1)
+        tek = tek + sayac;
+    else
+        cift+=sayac;
+}
+Console.WriteLine(tek);
+Console.WriteLine(cift);

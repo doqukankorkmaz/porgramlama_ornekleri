@@ -1,0 +1,7 @@
+double[] dizi = new double[7] { 22,40,10,55,6,88,14 };
+for(int i=0; i<7; i++)
+    dizi[i] = dizi[i]/2;
+for(int i=0; i<7; i++)
+    Console.WriteLine(dizi[i]);
+
+//dizinin içindeki sayıları 2ye bölüp yazdırma

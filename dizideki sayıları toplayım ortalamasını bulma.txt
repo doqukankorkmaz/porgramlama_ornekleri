@@ -1,0 +1,13 @@
+int[] sayilar = new int[5] { 3, 8, 11, 8, 9 };
+
+double toplam = 0;
+
+
+
+foreach (int sayi in sayilar)
+
+{
+    toplam = toplam + sayi;
+ 
+}
+Console.WriteLine(toplam/5);

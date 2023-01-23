@@ -1,0 +1,24 @@
+string[] isim= new string[5];
+int[] vize= new int[5];
+int[] final=new int[5];
+
+for (int i = 0; i < 5; i++)
+{
+    Console.Write("isim giriniz:");
+    isim[i] = Console.ReadLine();
+
+    Console.Write("vize notu giriniz:");
+    vize[i] = Convert.ToInt32(Console.ReadLine());
+
+    Console.Write("final notu girniz:");
+    final[i] = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine();
+    
+}
+for (int i = 0; i < 5; i++)
+{
+    double ortalama = (vize[i] * 0.4 + final[i] * 0.6);
+    if(ortalama>60)
+        Console.WriteLine($"isim: {isim[i]}\t  vize:{vize[i]}\t     final:{final[i]}\t      ortalama:{final[i]}"  );
+}

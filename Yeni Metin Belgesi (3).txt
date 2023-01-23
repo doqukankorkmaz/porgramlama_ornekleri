@@ -1,0 +1,23 @@
+class A
+{
+    public int sayi;
+}
+class B:A
+{
+    public int sayi;
+    public void yaz()
+    {
+    base.sayi=5;
+        sayi=7;
+        Console.WriteLine("b sınıfı");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        B nesne = new B();
+        nesne.yaz();
+    }
+}

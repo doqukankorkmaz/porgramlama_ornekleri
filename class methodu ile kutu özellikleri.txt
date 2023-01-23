@@ -1,0 +1,27 @@
+class kutu
+{
+    public int yukseklik;
+    public int genislik;
+    public int uzunluk;
+
+    public int hacim()
+    {
+        return yukseklik*genislik*uzunluk;
+    }
+}
+class program
+{
+    static void Main(string[] args)
+    {
+        kutu kutu1 = new kutu();
+        kutu1.genislik = 5;
+        kutu1.yukseklik = 10;
+        kutu1.uzunluk = 15;
+        Console.WriteLine(kutu1.hacim());
+        kutu kutu2 = new kutu();
+        kutu2.genislik = 10;
+        kutu2.yukseklik = 18;
+        kutu2.uzunluk = 12;
+        Console.WriteLine(kutu2.hacim());
+    }
+}

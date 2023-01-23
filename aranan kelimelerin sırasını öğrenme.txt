@@ -1,0 +1,10 @@
+string metin, aranacaKelime;
+Console.Write("metin gir:");
+metin=Console.ReadLine();
+
+Console.Write("aranan kelime gir:");
+aranacaKelime=Console.ReadLine();
+
+for (int i = 0; i <= metin.Length - aranacaKelime.Length; i++)
+    if (aranacaKelime == metin.Substring(i, aranacaKelime.Length))
+        Console.WriteLine($"arnan kelime {i} konumunda");

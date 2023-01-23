@@ -1,0 +1,13 @@
+string sifre = "gbv";
+for(int i = 97; i<=122;i++ )
+    for (int j = 97;j <= 122; j++)
+        for (int k = 97; k <= 122; k++)
+        {
+            //Console.WriteLine(((char)i).ToString() + (char)j + (char)k + "");
+            string kontrol = ((char)i).ToString() + (char)j + (char)k ;
+            if(kontrol == sifre) 
+            {
+                Console.WriteLine($"sifre bulundu: {kontrol}");
+            }
+                
+        }

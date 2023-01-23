@@ -1,0 +1,7 @@
+static void degistir(ref int a)
+{
+    a = 5;
+}
+int b = 9;
+degistir(ref b);
+Console.WriteLine(b);

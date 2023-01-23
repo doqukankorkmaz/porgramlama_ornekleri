@@ -1,0 +1,11 @@
+int[] dizi1 = new int[5] { 7, 3, 6, 0, 9 };
+int[] dizi2 = new int[5] { 0, 0, 0, 0, 0 };
+
+for (int i = 0; i < 5; i++)
+{
+    int yedek= dizi2[i];
+    dizi2[i] = dizi1[i];
+    dizi1[i] = yedek;
+}
+for (int i = 0; i < dizi1.Length; i++)
+    Console.WriteLine($"dizi1 {dizi1[i]} dizi2 {dizi2[i]}");

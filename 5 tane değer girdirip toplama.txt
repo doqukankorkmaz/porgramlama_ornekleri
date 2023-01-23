@@ -1,0 +1,15 @@
+int sayac, toplam, sayi;
+toplam = 0;
+sayi = 0;
+sayac = 1;
+while (sayac <= 5)
+{
+    Console.Write($"{sayac}. sayı giriniz:");
+    sayi =Convert.ToInt32(Console.ReadLine());
+    toplam = toplam + sayi;
+    sayac++;
+
+
+}
+Console.WriteLine($"girilen sayıların toplamı{toplam}");
+Console.ReadKey();

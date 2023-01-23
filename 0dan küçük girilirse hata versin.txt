@@ -1,0 +1,17 @@
+try
+{
+    Console.Write("1.sayı giriniz: ");
+    int sayi1 = Convert.ToInt32(Console.ReadLine());
+    if (sayi1<0) throw new Exception("sayılardan biri  0'dan küçük olduğu için hata verdi");
+
+    Console.Write("2.sayı giriniz: ");
+    int sayi2 = Convert.ToInt32(Console.ReadLine());
+    if (sayi2 <0) throw new Exception("sayılardan biri 0'dan küçük olduğu için hata verdi");
+
+     int toplam = sayi1 + sayi2;
+    Console.WriteLine(toplam);
+}
+catch (Exception nesne)
+{
+    Console.WriteLine("oluşan hata: "+nesne.Message);
+}

@@ -1,0 +1,14 @@
+static string yasanabilir(int der)
+{
+
+    if (der >= 20 && der <= 26)
+        return "yaşanılabilir";
+    else
+        return "yaşanamaz";
+}
+Console.Write("derece giriniz:");
+int der = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(yasanabilir(der));
+
+

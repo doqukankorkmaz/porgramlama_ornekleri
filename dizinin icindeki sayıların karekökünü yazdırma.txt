@@ -1,0 +1,8 @@
+double[] dizi = new double[5] { 16,25,4,36, 9 };
+for (int i = 0; i < 5; i++)
+    dizi[i] = Math.Sqrt(dizi[i]);
+for (int i = 0; i < 5; i++)
+    Console.WriteLine(dizi[i]);
+
+
+//dizinin içindeki sayıların karekökünün alma

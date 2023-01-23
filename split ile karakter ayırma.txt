@@ -1,0 +1,4 @@
+string metin = "dogukan,bugün Okula Gelmedi. Eray, said; berkay";
+string[]isim=metin.Split(' ','.',';',',');
+foreach(string eleman in isim)
+    Console.WriteLine(eleman);

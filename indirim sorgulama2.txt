@@ -1,0 +1,11 @@
+Console.Write("fiyat girinz:");
+int satis=Convert.ToInt32(Console.ReadLine());
+double indirim = 0;
+if (satis > 50 && satis < 100)
+    indirim = satis * 0.02;
+if (satis >= 100 && satis < 200)
+    indirim = satis * 0.04;
+if (satis >= 200 && satis < 300)
+    indirim = satis * 0.06;
+Console.Write($"ürün {indirim} TL indirim ile {satis-indirim} TL değerindedir");
+Console.ReadKey();

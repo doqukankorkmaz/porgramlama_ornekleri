@@ -1,0 +1,9 @@
+int sayac ;
+sayac = 1;
+while (sayac <= 10)
+{
+    Console.WriteLine("merhaba");
+    sayac = sayac + 1;
+}
+
+Console.ReadKey();

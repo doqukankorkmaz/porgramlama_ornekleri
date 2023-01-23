@@ -1,0 +1,14 @@
+int[] sayilar = new int[5] { 3, 8, 11, 8, 9 };
+
+    int toplam = 0;
+
+    
+
+foreach (int sayi in sayilar)
+
+    {
+        toplam = toplam + sayi;
+    }
+    Console.WriteLine(toplam);
+
+//dizinin içindeki sayıları toplama

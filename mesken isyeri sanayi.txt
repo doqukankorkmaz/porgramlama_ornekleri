@@ -1,0 +1,18 @@
+Console.WriteLine("mesken:1 İşyeri:2 Sanayi:3");
+Console.Write("Abone türü giriniz:");
+int abone = Convert.ToInt32(Console.ReadLine());
+Console.Write("harcama Miktarı giriniz:");
+int harcama = Convert.ToInt32(Console.ReadLine());
+double odeme=0;   
+if (abone == 1)
+    if (harcama < 50 ) odeme = harcama * 1;
+    else odeme = harcama * 1.5;
+if (abone == 2)
+    if(harcama < 150) odeme = harcama * 1.5;
+    else odeme = harcama * 2;
+if (abone == 3)
+    if (harcama < 100) odeme = harcama * 0.75;
+    else odeme = harcama * 1;
+Console.WriteLine($"ödenecek tutar: {odeme * 1.8}");
+
+Console.ReadKey();

@@ -1,0 +1,16 @@
+int sayac, tektop, cifttop;
+cifttop = 0;
+tektop = 0;
+sayac = 1;
+while (sayac <= 10) 
+{
+
+    if (sayac % 2 == 1)
+        tektop = tektop + sayac; 
+    else
+        cifttop = cifttop + sayac;
+    sayac++;
+}
+Console.WriteLine($"çift sayıların toplamı {cifttop}");
+Console.WriteLine($"tek sayıların toplamı: {tektop}");
+Console.ReadKey();

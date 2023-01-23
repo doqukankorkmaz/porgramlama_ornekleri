@@ -1,0 +1,8 @@
+//belirtilen değer kadar yazdırma 10dan büyükse çıktı vermez 
+static void yaz(object deger, int tekrar)
+{
+    if (tekrar > 10) return;
+    for(int i = 1;i<= tekrar;i++)
+    Console.WriteLine(deger);   
+}
+yaz("dogukan", 10);

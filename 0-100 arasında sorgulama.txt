@@ -1,0 +1,7 @@
+Console.Write("bir değer giriniz (0-200)");
+int sayi= Convert.ToInt32(Console.ReadLine());
+if (sayi >= 0 && sayi <= 100)
+    Console.WriteLine("değeriniz 0-100 arasındadır");
+if (sayi >= 101 && sayi <= 200)
+    Console.WriteLine("değeriniz 101-200 arsındadır");
+Console.ReadKey();

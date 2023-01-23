@@ -1,0 +1,14 @@
+class personel
+{
+   public int pno { get; set; }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        personel serkan=new personel();
+        serkan.pno = 10;
+        Console.WriteLine(serkan.pno);
+        
+    }
+}

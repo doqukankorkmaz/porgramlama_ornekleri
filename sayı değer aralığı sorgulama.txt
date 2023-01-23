@@ -1,0 +1,12 @@
+Console.Write("değer giriniz");
+int sayi = Convert.ToInt32(Console.ReadLine());
+if (sayi >= 0 && sayi <= 10)
+    Console.WriteLine("girilen sayı 0-10 arasında");
+
+if (sayi > 10 && sayi<=20)
+    Console.WriteLine("girilen sayı 10-20 arasında");
+
+if (sayi > 20 && sayi <= 30)
+    Console.WriteLine("girilen sayı 20-30 arasında");
+
+Console.ReadKey();

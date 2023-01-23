@@ -1,0 +1,15 @@
+//gelen ğaramaetrelerden büyük olan sayıyı geri döndüren metod
+static int buyuksayi(int sayi1, int sayi2)
+{
+    int bs;
+    if(sayi1>sayi2)
+        bs = sayi1;//return sayi1;
+    else
+        bs = sayi2;//return sayi2;
+    return bs;
+}
+Console.Write("sayi giriniz:");
+int s1=Convert.ToInt32(Console.ReadLine());
+Console.Write("sayi giriniz:");
+int s2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(buyuksayi(s1,s2));

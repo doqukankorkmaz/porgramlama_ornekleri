@@ -1,0 +1,10 @@
+try
+{
+    Console.WriteLine("sayı giriniz:");
+    int sayi = Convert.ToInt32(Console.ReadLine());
+    if (sayi > 5) throw new Exception("sayı beşten büyük olduğu için hata verdi");
+}
+catch (Exception nesne)
+{
+    Console.WriteLine("oluşan hata: "+nesne.Message);
+}

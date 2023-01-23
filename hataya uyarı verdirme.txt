@@ -1,0 +1,13 @@
+try
+{
+    Console.WriteLine("sayı giriniz:");
+    int sayi=Convert.ToInt32(Console.ReadLine()); 
+}
+catch
+{
+    Console.WriteLine("lğtfen sayı giriniz:");
+}
+finally
+{
+    Console.WriteLine("her durumda çalışır");
+}

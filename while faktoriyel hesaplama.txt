@@ -1,0 +1,15 @@
+int faktoriyel = 1;
+
+Console.Write("faktoriyeli hesaplanacak değer giriniz:");
+int sayi=Convert.ToInt32(Console.ReadLine()); ;
+int sayac = 1;
+while (sayac<=sayi)
+{
+    Console.WriteLine(sayac);
+    faktoriyel *= sayac;
+    sayac++;
+
+
+}
+Console.WriteLine($"girilen {sayi} değerinin faktöriyeli {faktoriyel} dir.");
+Console.ReadKey();

@@ -1,0 +1,33 @@
+class dortgen
+{
+    public int en;
+    public int boy;
+
+    public int alan()
+    {
+        return en * boy;
+    }
+    public int cevre()
+    {
+        return (en+boy)*2;
+    }
+}
+class program
+{
+    static void Main(string[] args)
+    {
+        dortgen kare = new dortgen();
+        kare.en = 10;
+        kare.boy = 10;
+        Console.WriteLine(kare.alan());
+        Console.WriteLine(kare.cevre());
+
+        dortgen dikdortgen = new dortgen();
+        dikdortgen.en = 5;
+        dikdortgen.boy = 10;
+        Console.WriteLine(dikdortgen.alan());
+        Console.WriteLine(dikdortgen.cevre());
+
+
+    }
+}

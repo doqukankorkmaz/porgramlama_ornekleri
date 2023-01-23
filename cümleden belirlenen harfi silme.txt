@@ -1,0 +1,11 @@
+Console.Write("bir cümle giriniz:");
+string cumle=Console.ReadLine();
+Console.Write("silincek harf giriniz:");
+string harf = Console.ReadLine();
+string yeni="";
+for(int i = 0; i<cumle.Length; i++)
+{
+    if (cumle[i] != harf[0])
+        yeni += cumle[i];
+}
+Console.WriteLine(yeni);

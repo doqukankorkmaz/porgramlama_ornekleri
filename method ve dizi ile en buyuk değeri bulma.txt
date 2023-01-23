@@ -1,0 +1,11 @@
+static int buyuksayi (params int[] sayilar)
+{
+    int enb=sayilar[0];
+    for (int i = 0; i < sayilar.Length; i++)
+        if (sayilar[i] > enb) enb = sayilar[i];
+    return enb;
+
+}
+Console.WriteLine(buyuksayi (3,2,1,5,8,9));
+
+

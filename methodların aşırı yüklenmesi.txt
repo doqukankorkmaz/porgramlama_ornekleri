@@ -1,0 +1,12 @@
+static void toplam(int a, int b)
+{
+    return a + b;
+}
+static void toplam(int a, int b, int c)
+{
+    return a + b + c;
+}
+Console.WriteLine(toplam((5,7));
+Console.WriteLine(toplam(5,11,8));
+
+//methodların aşırı yüklenmesi

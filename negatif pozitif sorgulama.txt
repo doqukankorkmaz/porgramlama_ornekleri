@@ -1,0 +1,12 @@
+Console.Write("sayı giriniz:");
+int s1 = Convert.ToInt32(Console.ReadLine());
+if (s1 > 0)
+    Console.WriteLine($" {s1} pozitif ");
+
+if (s1 == 0)
+    Console.WriteLine($" {s1} nötr ");
+
+
+if(s1<0)
+    Console.WriteLine($" {s1} negatif");
+Console.ReadKey();

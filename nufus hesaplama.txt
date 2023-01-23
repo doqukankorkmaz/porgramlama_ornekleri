@@ -1,0 +1,8 @@
+double yil, nufus;
+nufus = 30000;
+for (yil = 2000; yil <= 2022; yil += 4) 
+{
+    nufus = nufus*0.038+nufus;
+
+}
+Console.WriteLine(nufus);

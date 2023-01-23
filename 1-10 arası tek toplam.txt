@@ -1,0 +1,9 @@
+int toplam = 0, sayac = 1;
+while (sayac <= 10)
+{
+    Console.WriteLine(sayac);
+    toplam = toplam + sayac;
+    sayac = sayac + 2;
+}
+Console.WriteLine(toplam);
+Console.ReadKey();
